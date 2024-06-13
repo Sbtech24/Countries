@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
-
+import './card.css'
 const Container = () => {
     const [country,setCountry] = useState(null)
 
@@ -14,12 +14,12 @@ const Container = () => {
     }
     ,[null])
   return (
-    <div>
-        {country && country.map((data)=>{
+    <div className='country-card'>
+        {country && country.slice(0,11).map((data)=>{
             return(
                 <>
-                <div>
-                    <img src={data.flags.png} alt="" />
+                <div className='card'>
+                    <img src={data.flags.png} width={220} alt="" />
                     <h4>{data.name.common}</h4>
                     <p>{data.population}</p>
                     <p>{data.region}</p>
