@@ -15,15 +15,17 @@ const Container = () => {
     ,[null])
   return (
     <div className='country-card'>
-        {country && country.slice(0,11).map((data)=>{
+        {country && country.slice(0,16).map((data)=>{
             return(
                 <>
                 <div className='card'>
-                    <img src={data.flags.png} width={220} alt="" />
+                    <img src={data.flags.png} alt="" className='flag' />
+                    <div className='country-data'>
                     <h4>{data.name.common}</h4>
-                    <p>{data.population}</p>
-                    <p>{data.region}</p>
-                    <p>{data.capital}</p>
+                    <p><span>Population:</span>{data.population}</p>
+                    <p><span>Region:</span>{data.region}</p>
+                    <p><span>Capital:</span>{data.capital}</p>
+                    </div>
                 </div>
                
                 </>

@@ -1,24 +1,19 @@
-import { useEffect } from "react"
-import Container from "./Container"
-
+import { useEffect } from "react";
+import Container from "./Container";
+import { MenuItem, TextField } from "@mui/material";
+import Region from "./Region";
+import "./main.css"
 const Main = () => {
-
+  
   return (
     <div>
-        <div>
-            <input type="text" placeholder='Search for a country...' />
-            <select name=""id="">
-                <option value="">Filter by Region</option>
-                <option value="">Africa</option>
-                <option value="">America</option>
-                <option value="">Asia</option>
-                <option value="">Europe</option>
-                <option value="">Oceania</option>
-            </select>
-        </div>
-        <Container/>
+      <div className="input-container">
+        <TextField></TextField>
+       <Region/>
+      </div>
+      <Container />
     </div>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
