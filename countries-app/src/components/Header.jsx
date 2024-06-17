@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <h1>Where in the world?</h1>
-      <div className='container'>
+      <div className='dark-mode-container'>
         <img src={moon} alt="" />
         <h3>Dark Moon</h3>
       </div>

@@ -11,3 +11,15 @@ h1{
     font-size: 30px;
 }
 
+.dark-mode-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width: 200px;
+}
+
+.dark-mode-container img{
+    max-width:100%;
+}
+

@@ -6,7 +6,6 @@ import Main from '../components/Main'
 const Homepage = () => {
   return (
     <div>
-        <Header/>
         <Main/>
     </div>
   )

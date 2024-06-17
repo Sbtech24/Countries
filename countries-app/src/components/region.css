@@ -1,0 +1,8 @@
+#Region-box{
+    padding: 14px;
+    border: none;
+    border-radius: 0.2em;
+    -webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.12);
+    box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.12);
+}

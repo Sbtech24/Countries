@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import './card.css'
-const Container = () => {
+import { Link } from 'react-router-dom'
+const Container = ({name}) => {
     const [country,setCountry] = useState(null)
 
     useEffect(()=>{
@@ -18,7 +19,8 @@ const Container = () => {
         {country && country.slice(0,16).map((data)=>{
             return(
                 <>
-                <div className='card'>
+                <Link to={`/card/${name}`} className='card'>
+                <div >
                     <img src={data.flags.png} alt="" className='flag' />
                     <div className='country-data'>
                     <h4>{data.name.common}</h4>
@@ -27,7 +29,7 @@ const Container = () => {
                     <p><span>Capital:</span>{data.capital}</p>
                     </div>
                 </div>
-               
+                </Link>
                 </>
             )
         })}
