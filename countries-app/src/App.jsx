@@ -2,7 +2,7 @@ import React from 'react'
 import {Route,createBrowserRouter,createRoutesFromElements,RouterProvider} from 'react-router-dom'
 
 import Homepage from './pages/Homepage'
-import CardDetails,{cardLoader} from './pages/CardDetails'
+import CardDetails from './pages/CardDetails'
 import MainLayout from './layouts/MainLayout'
 
 
@@ -10,7 +10,7 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element ={<MainLayout/>}>
     <Route index element = {<Homepage/>}/>
-    <Route path={`/card/${name}`} element = {<CardDetails/>}/>
+    <Route path='card/:name' element = {<CardDetails/>}/>
     </Route>
   )
 )

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState,useEffect } from 'react'
 import './card.css'
 import { Link } from 'react-router-dom'
-const Container = ({name}) => {
+const Container = () => {
     const [country,setCountry] = useState(null)
 
     useEffect(()=>{
@@ -10,6 +10,7 @@ const Container = ({name}) => {
         const res =await fetch('https://restcountries.com/v3.1/all')
         const data = await res.json()
         setCountry(data)
+        console.log(data)
         }
         fetchData()  
     }
@@ -19,9 +20,9 @@ const Container = ({name}) => {
         {country && country.slice(0,16).map((data)=>{
             return(
                 <>
-                <Link to={`/card/${name}`} className='card'>
+                <Link to={`/card/${data.name.common}`} className='card'>
                 <div >
-                    <img src={data.flags.png} alt="" className='flag' />
+                    <img src={data.flags.png} alt="" className='flag'  />
                     <div className='country-data'>
                     <h4>{data.name.common}</h4>
                     <p><span>Population:</span>{data.population}</p>
