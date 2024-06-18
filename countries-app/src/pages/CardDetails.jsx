@@ -35,7 +35,8 @@ const CardDetails = () => {
                 <div className="right">
                 <p><span>Top Level Domain:</span>{data.tld[0]} </p>
                 <p><span>Currencies:</span>{Object.values(data.currencies)[0].name} </p>
-                <p><span>Languages:</span>{data.languages.eng} </p>
+                <p><span>Languages:</span>{Object.values(data.languages)[0]} </p>
+
                 </div>
             </div>
         </div>
