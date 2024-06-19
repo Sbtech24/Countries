@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams,useLoaderData,Link } from 'react-router-dom'
+import "./cardDetails.css"
 const CardDetails = () => {
     const {name} = useParams()
     const [countryData,setCountryData] = useState(null)
@@ -16,7 +17,7 @@ const CardDetails = () => {
         
   return (
     <>
-    <Link to='/'><button >Back</button></Link>
+    <Link to='/'><button className='button' >Back</button></Link>
     {countryData && countryData.map((data,key)=>{
         return(
             <div className="container">
@@ -36,7 +37,6 @@ const CardDetails = () => {
                 <p><span>Top Level Domain:</span>{data.tld[0]} </p>
                 <p><span>Currencies:</span>{Object.values(data.currencies)[0].name} </p>
                 <p><span>Languages:</span>{Object.values(data.languages)[0]} </p>
-
                 </div>
             </div>
         </div>
