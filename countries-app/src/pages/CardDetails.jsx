@@ -18,7 +18,7 @@ const CardDetails = () => {
   return (
     <>
     <Link to='/'><button className='button' >Back</button></Link>
-    {countryData && countryData.map((data,key)=>{
+    {countryData && countryData.slice(0,1).map((data,key)=>{
         return(
             <div className="container">
         <img src={data.flags.png} alt={data.flags.alt} />
