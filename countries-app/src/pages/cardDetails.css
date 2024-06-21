@@ -31,9 +31,9 @@
 .button:hover{
     cursor: pointer;
 }
-
-/* .left span{
-    color: black;
+p{
+    color: hsl(0, 0%, 52%);;
 }
-
- */
+span{
+    font:bolder
+}
