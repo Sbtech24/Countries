@@ -21,7 +21,7 @@ const Container = () => {
             return(
                 <>
                 <Link to={`/card/${data.name.common}`} className='card'>
-                <div >
+                <div>
                     <img src={data.flags.png} alt="" className='flag'  />
                     <div className='country-data'>
                     <h4>{data.name.common}</h4>

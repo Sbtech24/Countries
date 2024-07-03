@@ -44,3 +44,8 @@ span{
 .country-data> p {
     color:hsl(0, 0%, 52%) ;
 }
+@media (max-width:800px){
+    .country-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

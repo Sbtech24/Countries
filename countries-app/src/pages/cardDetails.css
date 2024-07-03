@@ -5,10 +5,8 @@
     justify-content: center;
     gap: 30px;
     padding:40px;
-    
 
 }
-
 .country-info{
     display: flex;
     justify-content: space-between;
@@ -27,12 +25,11 @@
         margin: 30px;    
 
 }
-
 .button:hover{
     cursor: pointer;
 }
 p{
-    color: hsl(0, 0%, 52%);;
+    color: hsl(0, 0%, 52%);
 }
 span{
     font:bolder
