@@ -8,7 +8,7 @@ import MainLayout from './layouts/MainLayout'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element ={<MainLayout/>}>
+    <Route path='/'element ={<MainLayout/>}>
     <Route index element = {<Homepage/>}/>
     <Route path='card/:name' element = {<CardDetails/>}/>
     </Route>
