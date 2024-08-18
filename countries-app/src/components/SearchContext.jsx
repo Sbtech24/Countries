@@ -12,7 +12,9 @@ export const SearchContextProvider = ({children})=>{
       const data = await res.json()
       setCountryData(data)
       setSearch(true)
+      setInputData("")
       console.log(countryData)
+      
       }
 
   const handleClick=(e)=>{
@@ -20,7 +22,7 @@ export const SearchContextProvider = ({children})=>{
     
   }
   return(
-    <searchContext.Provider value={{countryData,inputData,search,fetchData,handleClick,setInputData}}>
+    <searchContext.Provider value={{countryData,inputData,search,fetchData,handleClick,setInputData,setSearch}}>
     {children}
     </searchContext.Provider>
   )

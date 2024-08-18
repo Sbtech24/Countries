@@ -1,14 +1,27 @@
-import React from 'react'
+
 import moon from '../assets/moon.svg'
 import "./header.css"
+import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { searchContext } from './SearchContext'
+
+
+
+
+
 const Header = () => {
+  const {setSearch} = useContext(searchContext)
+  const home = ()=>{
+    setSearch(false)
+  }
   return (
     <header>
-      <h1>Where in the world?</h1>
+      
+      <Link to="/" className='link' onClick={home}><h1>Where in the world?</h1> </Link>
       <div className='dark-mode-container'>
         <img src={moon} alt="" />
         <h3>Dark Moon</h3>
-      </div>
+      </div> 
     </header>
   )
 }

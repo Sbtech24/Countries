@@ -8,17 +8,11 @@ const Search = () => {
   const {handleClick,fetchData,inputData,search,countryData,setInputData} = useContext(searchContext)
   return (
     <div>
-      <form action="submit" onSubmit={handleClick}>
-      <input type="text"className='input-box'  value={inputData} onChange={(e) => setInputData(e.target.value)}  placeholder='Search for a country...'/> 
-      <button onClick={fetchData}></button>
-      </form>
-     
-
      <>
      {countryData && countryData.map((country)=>{
       return(
         <Link to={`/card/${country.name.common}`} className='card'>
-        <div>
+        <div className='card'>
             <img src={country.flags.png} alt="" className='flag'  />
             <div className='country-data'>
             <h4>{country.name.common}</h4>
