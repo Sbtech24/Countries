@@ -7,7 +7,7 @@ export const SearchContextProvider = ({children})=>{
         const [inputData, setInputData] = useState("");
         const [search, setSearch] = useState(false);
 
-    const fetchData=async() =>{
+    const fetchData=async () =>{
       const res =await fetch(`https://restcountries.com/v3.1/name/${inputData}`)
       const data = await res.json()
       setCountryData(data)

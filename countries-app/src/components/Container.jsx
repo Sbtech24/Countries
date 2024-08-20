@@ -17,7 +17,7 @@ const Container = () => {
     ,[null])
   return (
     <div className='country-card'>
-        {country && country.slice(0,16).map((data)=>{
+        {country && country.slice(4,16).map((data)=>{
             return(
                 <>
                 <Link to={`/card/${data.name.common}`} className='card'>
