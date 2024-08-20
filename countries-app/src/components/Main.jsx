@@ -12,7 +12,7 @@ const Main = () => {
     <div>
       <div className="input-container">
       <form action="submit" onSubmit={handleClick}>
-      <input type="text"className='input-box'  value={inputData} onChange={(e) => setInputData(e.target.value)}  placeholder='Search for a country...'/> 
+      <input type="text"className='input-box' value={inputData} onChange={(e) => setInputData(e.target.value)}  placeholder='Search for a country...'/> 
       <button onClick={fetchData}></button>
       </form>
         

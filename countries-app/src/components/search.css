@@ -1,6 +1,6 @@
 .input-box{
     padding: 14px;
-    width: 350px;
+    width: 100px;
     border: none;
     border-radius: 0.2em;
     -webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.12);
@@ -8,13 +8,13 @@
     box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.12);
 
 }
-.country-card{
+/* .country-card{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 26px;
     margin: 0 auto;
     gap:20px;
-}
+} */
 
 .card{
     background-color: white;

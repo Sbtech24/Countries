@@ -1,15 +1,15 @@
-:root{
+/* :root{
     --background-color:hsl(0, 0%, 98%);
    
 }
 
 [data-theme = "dark"]{
     --background-color:hsl(207, 26%, 17%)
-}
+} */
 
 .country-card{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 26px;
     margin: 0 auto;
     gap:20px;
@@ -51,10 +51,26 @@ span{
     color: black;
 }
 .country-data> p {
-    color:hsl(0, 0%, 52%) ;
+    color:hsl(0, 0%, 52%);
 }
-@media (max-width:800px){
-    .country-card{
-        grid-template-columns: repeat(2,1fr);
+@media (min-width: 1024px) {
+    /* Desktop: 4 columns */
+    .country-card {
+      grid-template-columns: repeat(4, 1fr) !important;
     }
-}
+  }
+  
+  @media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet: 2 columns */
+    .country-card {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 767px) {
+    /* Mobile: 1 column */
+    .country-card {
+      grid-template-columns: 1fr;
+    }
+    
+  }

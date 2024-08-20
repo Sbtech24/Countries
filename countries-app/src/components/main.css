@@ -2,5 +2,20 @@
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items:center;
     padding: 30px;
 }
+
+/* .input-box{
+    max-width:100%;
+} */
+
+@media (max-width: 767px) {
+    /* Mobil */
+    .input-container{
+        flex-direction:column;
+        justify-content:center;
+       
+    }
+    
+  }
