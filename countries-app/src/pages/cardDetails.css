@@ -34,3 +34,13 @@ p{
 span{
     font:bolder
 }
+
+@media (max-width: 767px) {
+    /* Mobil */
+    .container,.country-info{
+        flex-direction:column;
+        justify-content:center;
+       
+    }
+    
+  }

@@ -3,8 +3,9 @@
     border: none;
     border-radius: 0.2em;
     /* margin-top:20px; */
-    width:50%;
+    width:100%;
     -webkit-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.12);
     -moz-box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.12);
     box-shadow: 3px 7px 5px 0px rgba(0,0,0,0.1);
 }
+

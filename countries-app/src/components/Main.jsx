@@ -13,14 +13,13 @@ const Main = () => {
       <div className="input-container">
       <form action="submit" onSubmit={handleClick}>
       <input type="text"className='input-box' value={inputData} onChange={(e) => setInputData(e.target.value)}  placeholder='Search for a country...'/> 
-      <button onClick={fetchData}></button>
+      <button onClick={fetchData}style={{display:"none"}}></button>
       </form>
-        
        <Region/>
       </div>
       {search && <Search/>}
       {!search && <Container />}
-      
+       
     </div>
   );
 };
